@@ -1262,9 +1262,9 @@ header .header-logo a {
   outline: 0;
   border: none;
   width: 97px;
-  height: 67px;
-  background: url("lolololo") no-repeat center;
-  background-size: 17px 27px;
+  height: 97px;
+  background: url() no-repeat center;
+  background-size: 37px 37px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1328,8 +1328,8 @@ font-size: 40px;
 }
 #header-menu-trigger .header-menu-icon {
   display: block;
-  height: 95px;
-  width: 150px;
+  height: 35px;
+  width: 100px;
   position: absolute;
   top: 50%;
   right: 9px;
@@ -2013,49 +2013,160 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* ===================================================================
- *  13. portfolio - (_layout.scss)
+ *  12. datei - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#portfolio {
-  background: blue;
+#datei {
+  background-color: #19191b;
+  background-image: url(https://dl.dropboxusercontent.com/s/rxvr6cekrasyz09/bg1.png?dl=0
+);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   min-height: 800px;
   position: relative;
-  padding: 0;
+  padding: 15rem 0 15rem;
+  color: rgba(255, 255, 255, 0.3);
 }
-#portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
-  background: #111111;
+#datei .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.7);
 }
-#portfolio .section-intro h3 {
+#datei .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
+}
+#datei .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#portfolio .section-intro h1 {
+#datei .section-intro h1 {
   color: #FFFFFF;
 }
-#portfolio .section-intro .lead {
+#datei .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
-#portfolio .portfolio-content {
-  margin-top: -22.2rem;
+#datei .datei-content {
+  text-align: center;
+  max-width: 1040px;
 }
-#portfolio .bricks-wrapper:before, 
-#portfolio .bricks-wrapper:after {
-  content: "";
-  display: table;
+#datei .datei-list {
+  margin-top: 1.2rem;
+  text-align: center;
 }
-#portfolio .bricks-wrapper:after {
-  clear: both;
+#datei .datei-list .service-item {
+  margin-bottom: 3rem;
+  padding: 0 50px;
 }
-#portfolio .bricks-wrapper .brick {
-  float: left;
-  width: 50%;
-  padding: 0;
-  margin: 0;
+#datei .datei-list .service-item p {
+  color: rgba(242, 242, 242, 0.5);
 }
-#portfolio .bricks-wrapper .brick:nth-child(2n+1) {
-  clear: both;
+#datei .datei-list .icon {
+  display: inline-block;
+  margin-bottom: 1.5rem;
 }
+#datei .datei-list .icon i {
+  font-size: 5.4rem;
+  color: #f9a828;
+}
+#datei .datei-list .h05 {
+  font-size: 1.7rem;
+  line-height: 1.765;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #datei .datei-list .service-item {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #datei .datei-list .service-item {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #datei {
+    padding: 12rem 0 12rem;
+  }
+  #datei .datei-content {
+    max-width: 550px;
+  }
+  #datei .datei-list .datei-item {
+    padding: 0 15px;
+  }
+  #datei .datei-list .icon i {
+    font-size: 5.1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #datei .datei-list .service-item {
+    padding: 0 10px;
+  }
+  #datei .datei-list .icon i {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #datei .datei-list .service-item {
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------- 
  * masonry entries - (_layout.css) 
@@ -2271,6 +2382,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     line-height: 1.5;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===================================================================
